@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Integration.Domain.Entities;
+namespace Integration.Domain;
 
 public class Employee
 {
-    public int PayrollNumber { get; set; }
+    public string PayrollNumber { get; set; }
     public string Forenames { get; set; }
     public string Surname { get; set; }
     public DateTime DateOfBirth { get; set; }
