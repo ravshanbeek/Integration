@@ -10,4 +10,9 @@
     <ProjectReference Include="..\Integration.Infrastructure\Integration.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+  </ItemGroup>
+
 </Project>

@@ -46,4 +46,6 @@ public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity>
     public async ValueTask<int> SaveChangesAsync() =>
         await this.context.SaveChangesAsync();
 
+    public async ValueTask<TEntity> SelectByIdAsync(int id) =>
+        await this.context.Set<TEntity>().FindAsync(id);
 }
